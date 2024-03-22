@@ -1,0 +1,109 @@
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .responsive-grid {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px; /* Adjust margin as needed */
+  }
+}
+
+/* Styling for the project grid */
+.gridproject {
+  .pboxs {
+    /* Styling for h5 and h1 elements */
+    h5 {
+      font-size: 17px;
+      color: var(--primary-color);
+    }
+    h1 {
+      font-size: 31px;
+      color: white;
+      transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      &:hover {
+        color: var(--primary-color) !important;
+      }
+    }
+
+    /* Styling for images inside pboxs */
+    img {
+      z-index: 0 !important;
+      width: 100%;
+      height: auto;
+      transition: filter 0.3s ease;
+    }
+
+    /* Styling for the icon overlay */
+    &::after {
+      content: "\f007"; /* Unicode for your desired icon, e.g., Font Awesome icon */
+      font-family: "Font Awesome 5 free"; /* Use the appropriate font family */
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 50px; /* Adjust icon size as needed */
+      color: rgb(235, 58, 58); /* Icon color */
+      // background-color: aqua; /* Background color for the icon */
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      z-index: 2; /* Ensure the icon is above the image */
+    }
+
+    /* Show icon on hover */
+    &:hover {
+      filter: brightness(0.5); /* Adjust brightness on hover */
+    }
+    &:hover::after {
+      opacity: 1; /* Show icon on hover */
+    }
+
+    /* Centered icon */
+  }
+}
+
+/* Styling for the project grid page */
+
+.grid-categories {
+  padding: 0 3vh;
+  font-size: 18px;
+  color: #ffffffa6;
+  text-decoration: none;
+  transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  position: relative;
+  background: none;
+  margin-bottom: 7vh;
+
+  &.active::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    margin-left: 3vh;
+    width: 50%;
+    height: 2px;
+    background-color: var(--primary-color); // Change to your desired color
+  }
+}
+
+// .pgridpage {
+//   .gridcat {
+//     margin-bottom: 7vh !important;
+//     button {
+//       background: none;
+//       padding: 0 3vh;
+//       font-size: 18px;
+//       color: #ffffffa6;
+//       text-decoration: none;
+//       transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+//     }
+//   }
+//   transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+// }
+
+// /* Show icon on hover for grid categories */
+// .gridcat a:hover {
+//   &::before {
+//     visibility: visible;
+//     content: alsfjl;
+//   }
+// }

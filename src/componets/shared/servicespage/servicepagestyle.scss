@@ -1,0 +1,10 @@
+.servicespage {
+  .pricing-item .pricing-details ul li:before {
+    content: "\f058" !important;
+    // background-color: aqua;
+    font-family: "Font Awesome 5 free";
+  }
+  .theme-btn {
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,23 @@
+#abtn-main {
+  z-index: 1;
+  cursor: pointer;
+  overflow: hidden;
+  font-weight: 600;
+  text-align: center;
+  padding: 10px 25px;
+  align-items: center;
+  position: relative;
+  border-radius: 15px;
+  background-color: #c9f31d;
+  text-transform: capitalize;
+  border: none;
+}
+
+#abtn-main svg {
+  margin-left: 5px;
+  transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1); /* Define transition property here */
+}
+
+#abtn-main:hover svg {
+  transform: translateX(10px);
+}

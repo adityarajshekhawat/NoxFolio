@@ -1,0 +1,125 @@
+.project {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
+
+  .project-main {
+    width: 82%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    h5 {
+      font-weight: 500;
+      display: block;
+      color: hsla(0, 0%, 100%, 0.65);
+    }
+    h1 {
+      //   width: 100%;
+      font-size: 45px;
+      font-weight: 500;
+      line-height: 1.2;
+      letter-spacing: 0.2vh;
+      display: flex;
+    }
+    .about-white-h1 {
+      //   width: 100%;
+      color: white;
+    }
+    .about-yellow-h1 {
+      padding-left: 2vh;
+      color: #c9f31d;
+    }
+    .project-div {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      .projectboxs {
+        width: 100%;
+        display: flex;
+        // justify-content: space-between;
+        padding: 2vh;
+      }
+
+      .project-left {
+        max-width: 48%;
+      }
+      .project-right {
+        width: 48%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        .lul {
+          width: 70%;
+
+          h5 {
+            color: #c9f31d;
+            font-size: 16px;
+          }
+          h1 {
+            font-size: 45px;
+            color: white;
+            transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+            &:hover {
+              color: #c9f31d;
+            }
+          }
+          p {
+            font-size: 16px;
+            color: #ffffffa6;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 786px) {
+  .about-white-h1 {
+    display: flex !important;
+    padding-left: 1vh;
+    max-width: 100% !important;
+    flex-direction: column;
+    // font-size: small !important;
+  }
+  .about-yellow-h1 {
+    padding: 0 !important;
+    display: flex !important;
+  }
+  .project-main {
+    width: 100% !important;
+    #latname {
+      margin-right: 30vh;
+    }
+
+    .projectboxs {
+      justify-content: center !important;
+      flex-direction: column;
+      width: 100% !important;
+    }
+    .project-left {
+      max-width: 100% !important;
+      height: auto;
+      margin-bottom: 2vh;
+      order: 1;
+      img {
+        width: 100% !important;
+      }
+    }
+    .project-right {
+      display: block !important;
+      // justify-content: flex-start;
+      order: 2;
+      width: 100% !important;
+    }
+  }
+}

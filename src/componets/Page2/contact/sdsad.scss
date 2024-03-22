@@ -1,0 +1,92 @@
+/* CSS for the form */
+.contactForm {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid rgb(33, 33, 33); /* Adjust border properties as needed */
+}
+#aaaro {
+  i {
+    color: var(--primary-color);
+    font-size: 25vh !important;
+    transform: rotate(-45deg);
+  }
+}
+.thheme-btn {
+  font-size: 15px;
+  border-radius: 7px;
+  padding-left: 33px;
+  padding-right: 33px;
+  width: 100%;
+  z-index: 1;
+  font-size: larger;
+  cursor: pointer;
+  overflow: hidden;
+  transition: 0.5s;
+  font-weight: 600;
+  text-align: center;
+  padding: 10px 35px;
+  align-items: center;
+  position: relative;
+  color: var(--black-color);
+  border-radius: 15px;
+  display: inline-flex;
+  justify-content: center;
+  text-transform: capitalize;
+  background: var(--primary-color);
+  i {
+    padding-right: 2vh;
+  }
+}
+
+// // .contactForm legend {
+// //   font-size: 1.2em;
+// //   font-weight: bold;
+// //   margin-bottom: 10px;
+// // }
+
+// .contactForm label {
+//   display: block;
+//   margin-bottom: 10px;
+// }
+
+// .contactForm .form-control {
+//   width: 100%;
+//   padding: 10px;
+//   border-radius: 5px;
+//   border: 1px solid white; /* Adjust border properties as needed */
+//   background-color: transparent; /* Transparent background */
+//   color: white;
+// }
+
+// .contactForm .form-control:focus {
+//   outline: none;
+// }
+
+// .contactForm .for-icon {
+//   position: absolute;
+//   top: 50%;
+//   transform: translateY(-50%);
+//   right: 10px;
+//   color: white;
+// }
+
+// .contactForm .help-block {
+//   color: red; /* Color for error messages */
+//   margin-top: 5px;
+// }
+
+// .contactForm .theme-btn {
+//   background-color: white;
+//   color: black;
+//   border: none;
+//   padding: 10px 20px;
+//   border-radius: 5px;
+//   cursor: pointer;
+//   margin-top: 10px;
+// }
+
+// .contactForm .theme-btn:hover {
+//   background-color: #f0f0f0; /* Hover background color */
+// }

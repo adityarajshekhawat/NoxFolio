@@ -1,0 +1,49 @@
+@keyframes rightenter {
+  0% {
+    transform: translateX(300vh);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes rightexit {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(300px);
+    opacity: 0;
+  }
+}
+
+@keyframes counterone {
+  from {
+    content: counter(0);
+    opacity: 0;
+  }
+  to {
+    content: counter(13);
+    opacity: 1;
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes leftRightOne {
+  0%,
+  to {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-100px);
+  }
+}

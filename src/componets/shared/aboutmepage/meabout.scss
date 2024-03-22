@@ -1,0 +1,27 @@
+.me-heading {
+  h1 {
+    font-size: 65px !important;
+    color: white;
+  }
+  a {
+    font-size: 18px;
+    color: #c9f31d;
+  }
+}
+.aboutme {
+  .slick-arrow {
+    display: none !important;
+  }
+  .testimonial-item .author:before {
+    content: "\f99";
+  }
+  .service-item .details-btn {
+    svg {
+    }
+  }
+  .fa-arrow-right::before {
+    &:hover {
+      color: #000000 !important;
+    }
+  }
+}

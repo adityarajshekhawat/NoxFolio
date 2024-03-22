@@ -1,0 +1,211 @@
+#intro-main {
+  z-index: 0;
+  // top: 0;
+  // left: 0;
+  // position: absolute;
+  height: 115vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  // background-image: url("../../assets/bg.gif");
+  padding-top: 10vh;
+  #intro-textdiv {
+    max-width: 30%;
+    padding-left: 5vh;
+    h1 {
+      font-size: 65px;
+    }
+    #home-grey-h1 {
+      font-size: 45px;
+      display: block;
+      font-weight: 400;
+      margin-bottom: 5px;
+      color: hsla(0, 0%, 100%, 0.35);
+    }
+    #home-yellow-h1 {
+      color: #c9f31d;
+      font-weight: 600;
+    }
+    #home-white-h1 {
+      color: white;
+    }
+    p {
+      padding: 2vh 0;
+      color: #ffffffa6;
+      width: 80%;
+    }
+
+    #intro-text-btndiv {
+      width: 100%;
+      background-color: transparent;
+      #intro-text-btn {
+        background-color: transparent;
+        color: white;
+        margin-left: 3vh;
+        padding: 0 1vh;
+        transition: all 02.5s cubic-bezier(0.075, 0.82, 0.165, 1); /* Define transition property here */
+
+        svg {
+          margin: 5px;
+          transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1); /* Define transition property here */
+        }
+        &:hover {
+          color: #c9f31d;
+
+          svg {
+            transform: translateX(10px);
+            color: #c9f31d !important;
+          }
+        }
+      }
+    }
+  }
+  #intro-image {
+    width: 85vh;
+    height: 85vh;
+    margin-right: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    // background-color: pink;
+    border-radius: 50%;
+    // border: 5px solid red;
+    overflow: hidden;
+    #intro-image-black {
+      position: absolute;
+      top: 5vh;
+      left: 5vh;
+      min-height: 60vh;
+      min-width: 60vh;
+      background-color: rgb(0, 0, 0);
+      border-radius: 50%;
+    }
+    #intro-boy {
+      z-index: 3;
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      top: 1vh;
+    }
+    #intro-yellow {
+      z-index: 2;
+      position: absolute;
+      top: 9vh;
+      right: -5vh;
+      width: 90vh;
+    }
+  }
+  #intro-numdiv {
+    background-color: #070707;
+    width: 265px;
+    padding: 35px 40px;
+    border-radius: 16px;
+    margin-right: 5vh;
+    #intro-exp {
+      animation: counterone 5.5s linear forwards;
+    }
+    h1 {
+      color: #c9f31d;
+      font-size: 6vh;
+      letter-spacing: 3px;
+    }
+    hr {
+      margin: 4vh 0;
+    }
+    p {
+      color: #ffffffa6;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  #intro-main {
+    // box-sizing: content-box;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0 !important;
+    padding: 0 !important;
+    flex-direction: column;
+    padding-left: 0vh !important;
+  }
+  #intro-textdiv {
+    max-width: 100% !important;
+    height: fit-content;
+    margin-top: 30vh;
+    padding-left: 1vh !important;
+    order: 0;
+
+    #home-grey-h1 {
+      font-size: 45px;
+      // display: flex;
+      font-weight: 400;
+      margin-bottom: 5px;
+      color: hsla(0, 0%, 100%, 0.35);
+    }
+    #home-yellow-h1 {
+      color: #c9f31d;
+      font-size: 7vh !important;
+      font-weight: 600;
+    }
+    #home-white-h1 {
+      font-size: 7vh !important;
+
+      color: white;
+    }
+    #intro-text-btndiv {
+      max-width: 100%;
+      a {
+        // display: in;
+        width: 20vh;
+        margin-left: 3px !important;
+      }
+    }
+  }
+  #intro-image {
+    width: 90% !important;
+    height: 60vh !important;
+    margin: 0 !important;
+    padding: 0vh 0 !important;
+    order: 2;
+    margin-top: 10vh !important;
+
+    #intro-image-black {
+      position: absolute;
+      top: 0vh !important;
+      left: 0vh !important;
+      min-height: 100vh !important;
+      min-width: 52vh !important;
+      background-color: rgb(0, 0, 0);
+      border-radius: 30% !important;
+    }
+    #intro-boy {
+      width: 50vh;
+      z-index: 3;
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      top: -0vh !important;
+    }
+    #intro-yellow {
+      z-index: 2;
+      position: absolute;
+      top: 1vh !important;
+      right: -5vh;
+      width: 90vh;
+      transform: rotate(20deg);
+    }
+  }
+  #intro-numdiv {
+    width: 95% !important;
+    // margin-left: 4vh;
+    margin-right: 0vh !important;
+    margin-top: 12vh;
+    order: 1;
+  }
+}

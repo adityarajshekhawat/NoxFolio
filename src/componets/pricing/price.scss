@@ -1,0 +1,260 @@
+.pricing-item {
+  padding: 10px;
+  border-radius: 16px;
+  margin-bottom: 30px;
+  background: var(--lighter-color);
+}
+.pricing-item .pricing-header {
+  padding: 47px 50px;
+  border-radius: 16px;
+  background: #131313;
+  border: 1px solid var(--border-color);
+  h4 {
+    color: #fefeff;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .pricing-item .pricing-header {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+.pricing-item .pricing-header .save-percent {
+  margin-bottom: 40px;
+  color: hsla(0, 0%, 100%, 0.35);
+}
+.pricing-item .pricing-header .save-percent span {
+  color: var(--primary-color);
+}
+.pricing-item .pricing-header .price {
+  font-size: 48px;
+  font-weight: 500;
+  color: var(--primary-color);
+  font-family: var(--font-dm_sans);
+}
+@media only screen and (max-width: 1199px) {
+  .pricing-item .pricing-header .price {
+    font-size: 40px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .pricing-item .pricing-header .price {
+    font-size: 35px;
+  }
+}
+.pricing-item .pricing-header .price:before {
+  content: "$";
+}
+.pricing-item .pricing-header .price:after {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--base-color);
+  content: "/per month";
+}
+.pricing-item .pricing-details {
+  padding: 40px 50px;
+  ul {
+    padding: 0;
+  }
+
+  p {
+    color: #ffffffa6;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .pricing-item .pricing-details {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+.pricing-item .pricing-details p {
+  margin-bottom: 35px;
+}
+.pricing-item .pricing-details ul {
+  padding-bottom: 12px;
+}
+.pricing-item .pricing-details ul li {
+  font-size: 20px;
+  margin-bottom: 34px;
+}
+@media only screen and (max-width: 375px) {
+  .pricing-item .pricing-details ul li {
+    font-size: 18px;
+  }
+}
+.pricing-item .pricing-details ul li:before {
+  content: "\f058";
+  background-image: url("../../assets/death-star.png ");
+
+  font-size: 18px;
+  margin-right: 15px;
+  color: var(--primary-color);
+  font-family: "Font Awesome 5 free";
+}
+.pricing-item .pricing-details ul li.unable {
+  color: #fff;
+  opacity: 0.35;
+}
+.pricing-item .pricing-details ul li.unable:before {
+  color: #fff;
+}
+.pricing-item:not(:hover) .theme-btn {
+  color: var(--base-color);
+  background: hsla(0, 0%, 100%, 0.1);
+}
+.pricing-item.style-two {
+  padding: 60px 50px;
+  border-radius: 10px;
+}
+@media only screen and (max-width: 767px) {
+  .pricing-item.style-two {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+}
+.pricing-item.style-two .title {
+  display: flex;
+  margin-bottom: 20px;
+}
+.pricing-item.style-two .title .icon {
+  flex: none;
+  margin-top: 3px;
+  font-size: 14px;
+  margin-right: 20px;
+  color: var(--black-color);
+  width: 33px;
+  height: 33px;
+  background: var(--primary-color);
+  line-height: 33px;
+  border-radius: 50%;
+  text-align: center;
+}
+.pricing-item.style-two .title h4 {
+  font-size: 26px;
+  margin-bottom: 0;
+}
+.pricing-item.style-two .title .save {
+  color: #888686;
+}
+.pricing-item.style-two .price {
+  color: #fff;
+  display: block;
+  line-height: 1;
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  font-family: var(--font-dm_sans);
+}
+.pricing-item.style-two .price:before {
+  content: "$";
+}
+.pricing-item.style-two .price:after {
+  color: #888686;
+  font-size: 16px;
+  font-weight: 500;
+  content: " Monthly";
+}
+.pricing-item.style-two .arrow {
+  text-align: right;
+  margin-bottom: 60px;
+}
+@media only screen and (max-width: 575px) {
+  .pricing-item.style-two .arrow {
+    text-align: left;
+    margin-bottom: 40px;
+  }
+}
+.pricing-item.style-two .theme-btn {
+  font-size: 15px;
+  border-radius: 7px;
+  padding-left: 33px;
+  padding-right: 33px;
+  svg {
+    margin-left: 2vh !important;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .pricing-item.style-two .list {
+    margin-top: 45px;
+  }
+}
+.pricing-item.style-two .list li {
+  color: #fff;
+  display: flex;
+  font-size: 18px;
+  line-height: 1.3;
+  font-family: var(--font-dm_sans);
+  justify-content: space-between;
+}
+.pricing-item.style-two .list li:not(:last-child) {
+  margin-bottom: 40px;
+}
+.pricing-item.style-two .list li i {
+  font-size: 12px;
+  transition: 0.4s;
+  margin-left: 10px;
+  width: 22px;
+  height: 22px;
+  background: #353535;
+  line-height: 22px;
+  border-radius: 50%;
+  text-align: center;
+}
+.pricing-item.style-two .list li:hover i {
+  color: var(--black-color);
+  background: var(--primary-color);
+}
+.pricing-tab {
+  justify-content: center;
+}
+.pricing-tab li:first-child button:after,
+.pricing-tab li:last-child button:before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  transition: 0.5s;
+  background: #0fcd81;
+  border-radius: 50%;
+}
+.pricing-tab li:first-child button:after {
+  margin-left: 10px;
+}
+.pricing-tab li:last-child button:before {
+  margin-right: 10px;
+}
+.pricing-tab li:first-child button:before {
+  position: absolute;
+  width: 60px;
+  height: 32px;
+  content: "";
+  top: 50%;
+  right: 0;
+  z-index: -1;
+  background: #0fcd81;
+  border-radius: 25px;
+  transform: translate(50%, -50%);
+}
+.pricing-tab li button {
+  padding: 0;
+  z-index: 1;
+  display: flex;
+  color: #fefeff;
+  font-size: 16px;
+  font-weight: 700;
+  align-items: center;
+  position: relative;
+  background: transparent;
+  text-transform: uppercase;
+  font-family: var(--font-dm_sans);
+}
+.pricing-tab li button:focus,
+.pricing-tab li button:hover {
+  color: #fefeff;
+}
+.pricing-tab li button.active {
+  color: var(--primary-color);
+}
+.pricing-tab li:first-child button.active:after,
+.pricing-tab li:last-child button.active:before {
+  background: #fff;
+}
